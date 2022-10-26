@@ -1,3 +1,3 @@
 #Problem 1
-def solution():
+def solution(n):
     pass
