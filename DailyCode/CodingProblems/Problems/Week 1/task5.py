@@ -1,17 +1,14 @@
 def cons(a, b):
-    def pair(f):
-        return f(a, b)
-    return pair
+    return (a, b)
 
-def car(f):
-    def left(a, b):
-        return a
-    return f(left)
+def car(pair):
+    return pair[0]
 
-def cdr(f):
-    def right(a, b):
-        return b
-    return f(right)
+def cdr(pair):
+    return pair[1]
 
-print(car(cons(3, 4)))
-print(cdr(cons(3, 4)))
+lst = cons(1, cons(2, 3))
+
+print(car(lst))
+print(car(cdr(lst)))
+print(cdr(cdr(lst)))
