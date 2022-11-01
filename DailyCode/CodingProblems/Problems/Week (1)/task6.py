@@ -33,7 +33,7 @@ class XorLinkedList:
             curr = self.head
             next_id = 1
              
-            print("The following nodes of the Linked List: ")
+            print("The nodes of the list are: ")
              
             while curr is not None:
 
