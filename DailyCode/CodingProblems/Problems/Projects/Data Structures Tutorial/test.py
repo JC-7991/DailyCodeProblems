@@ -13,3 +13,5 @@ print(x[0])
 # slicing
 x = 'computer'
 print(x[1:4])
+print(x[-1])
+print(x[-3])
