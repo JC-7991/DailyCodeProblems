@@ -46,16 +46,15 @@ class Trie():
 
         return 1
  
-keys = ["hello", "dog", "hell", "cat", "a",
-        "hel", "help", "helps", "helping"]
+keys = ["hello", "dog", "hell", "cat", "a", "hel", "help", "helps", "helping"]
 key = "h"
  
-
 t = Trie()
 t.formTrie(keys)
 comp = t.printAutoSuggestions(key)
  
 if comp == -1:
     print("No other strings found with this prefix\n")
+    
 elif comp == 0:
     print("No string found with this prefix\n")
