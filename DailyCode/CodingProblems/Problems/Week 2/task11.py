@@ -1,5 +1,5 @@
 class TrieNode():
-    
+
     def __init__(self):
         self.children = {}
         self.last = False
@@ -27,8 +27,7 @@ class Trie():
  
     def suggestionsRec(self, node, word):
  
-        if node.last:
-            print(word)
+        if node.last: print(word)
  
         for a, n in node.children.items():
             self.suggestionsRec(n, word + a)
