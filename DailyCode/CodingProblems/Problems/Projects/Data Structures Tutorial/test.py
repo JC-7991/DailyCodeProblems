@@ -9,3 +9,7 @@ print(x[1])
 # tuple
 x = ('Kevin', 'Niklas', 'Jenny', 'Craig')
 print(x[0])
+
+# slicing
+x = 'computer'
+print(x[1:4])
