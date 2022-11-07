@@ -18,8 +18,7 @@ class Trie():
         node = self.root
  
         for a in key:
-            if not node.children.get(a):
-                node.children[a] = TrieNode()
+            if not node.children.get(a): node.children[a] = TrieNode()
  
             node = node.children[a]
  
