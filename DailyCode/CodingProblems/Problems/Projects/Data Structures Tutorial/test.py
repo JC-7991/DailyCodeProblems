@@ -1,6 +1,7 @@
 # string
 x = 'frog'
 print(x[3])
+print(x[1])
 
 # list
 x = ['pig', 'cow', 'horse']
