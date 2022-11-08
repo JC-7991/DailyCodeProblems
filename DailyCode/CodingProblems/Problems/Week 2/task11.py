@@ -53,7 +53,7 @@ t.formTrie(keys)
 comp = t.printAutoSuggestions(key)
  
 if comp == -1:
-    print("No other strings found with this prefix\n")
+    print("No other strings found with this prefix.\n")
     
 elif comp == 0:
-    print("No string found with this prefix\n")
+    print("No string found with this prefix.\n")

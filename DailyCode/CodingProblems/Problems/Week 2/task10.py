@@ -16,7 +16,6 @@ class Scheduler:
 
             now = time() * 1000
             if len(self.functions) > 0:
-
                 due, func, args, kwargs = self.functions[0]
                 if now > due:
                     func(*args, **kwargs)
