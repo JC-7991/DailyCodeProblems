@@ -1,5 +1,7 @@
 class Node:
+
     def __init__(self, value, left = None, right = None):
+
         self.val = value
         self.left = left
         self.right = right
@@ -15,8 +17,10 @@ def countSubTree(root, count):
 
     if left == False or right == False:
         return False
+
     if root.left and root.val != root.left.val:
         return False
+
     if root.right and root.val != root.right.val:
         return False
 
@@ -25,6 +29,7 @@ def countSubTree(root, count):
 
 
 def countTrees(root):
+    
     count = [0]
     countSubTree(root, count)
     return count[0]
