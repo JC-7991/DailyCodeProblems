@@ -21,3 +21,7 @@ x = 'smeefington'
 print(x[-3:])
 print(x[:-3])
 print(x[-2:])
+
+# string
+x = 'horse' + 'shoe'
+print(x)
