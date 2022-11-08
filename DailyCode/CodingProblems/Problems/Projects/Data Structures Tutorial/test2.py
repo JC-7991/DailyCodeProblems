@@ -20,3 +20,6 @@ for item in x:
 x = [7, 8, 3]
 for index, item in enumerate(x):
     print(index, item)
+
+x = 'fleem'
+print(len(x))
