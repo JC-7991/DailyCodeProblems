@@ -25,3 +25,7 @@ print(x[-2:])
 # string
 x = 'horse' + 'shoe'
 print(x)
+
+# list
+x = ['pig', 'cow'] + ['horse']
+print(x)
