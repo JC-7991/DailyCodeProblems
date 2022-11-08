@@ -5,7 +5,7 @@ from time import sleep, time
 class Scheduler:
 
     def __init__(self):
-        
+
         self.functions = []
         thread = threading.Thread(target = self._poll)
         thread.start()
@@ -18,7 +18,8 @@ class Scheduler:
             if len(self.functions) > 0:
 
                 due, func, args, kwargs = self.functions[0]
-                if now > due: func(*args, **kwargs)
+                if now > due:
+                    func(*args, **kwargs)
                 self.functions = [(due, func, args, kwargs) for due, func, args, kwargs in self.functions if due < now]
                 
             sleep(0.01)
