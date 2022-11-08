@@ -29,3 +29,7 @@ print(x)
 # list
 x = ['pig', 'cow'] + ['horse']
 print(x)
+
+# tuple
+x = ('Kevin', 'Jones') + ('Smith',)
+print(x)
