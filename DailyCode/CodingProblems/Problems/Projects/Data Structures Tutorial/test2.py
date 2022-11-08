@@ -12,3 +12,11 @@ print('u' in x)
 
 x = 'smeef'
 print('e' not in x)
+
+x = [7, 8, 3]
+for item in x:
+    print(item)
+
+x = [7, 8, 3]
+for index, item in enumerate(x):
+    print(index, item)
