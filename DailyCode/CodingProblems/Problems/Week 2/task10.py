@@ -5,6 +5,7 @@ from time import sleep, time
 class Scheduler:
 
     def __init__(self):
+        
         self.functions = []
         thread = threading.Thread(target = self._poll)
         thread.start()
