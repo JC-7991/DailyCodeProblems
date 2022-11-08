@@ -25,11 +25,12 @@ def countSubTree(root, count):
         return False
 
     count[0] += 1
+    
     return True
 
 
 def countTrees(root):
-    
+
     count = [0]
     countSubTree(root, count)
     return count[0]
