@@ -12,3 +12,7 @@ print(sum(x[-2:]))
 
 x = ['b', 'a', 'c', 'e', 'd']
 print(sorted(x))
+
+# sort by 2nd letter
+x = ['Adam', 'Beck', 'Chad', 'Dairon']
+print(sorted(x, key = lambda k: k[1]))
