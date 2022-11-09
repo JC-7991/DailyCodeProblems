@@ -23,3 +23,6 @@ for index, item in enumerate(x):
 
 x = 'fleem'
 print(len(x))
+
+x = ['a', 'b', 'c', 'd']
+print(len(x))
