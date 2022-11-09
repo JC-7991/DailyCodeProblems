@@ -22,3 +22,6 @@ print(sorted(x, key = lambda k: k[2]))
 
 x = ['xxxcx', 'xxxax', 'xxxbx']
 print(sorted(x, key = lambda k: k[3]))
+
+x = 'hinglemccringleberry'
+print(x.count('e'))
