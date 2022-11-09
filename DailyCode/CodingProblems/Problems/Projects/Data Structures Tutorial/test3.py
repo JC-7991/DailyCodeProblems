@@ -19,3 +19,6 @@ print(sorted(x, key = lambda k: k[1]))
 
 # sort by 3rd letter
 print(sorted(x, key = lambda k: k[2]))
+
+x = ['xxxcx', 'xxxax', 'xxxbx']
+print(sorted(x, key = lambda k: k[3]))
