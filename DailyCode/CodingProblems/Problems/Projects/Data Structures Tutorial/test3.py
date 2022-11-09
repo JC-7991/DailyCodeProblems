@@ -9,3 +9,6 @@ print(max(x))
 x = [1, 4, 7, 12]
 print(sum(x))
 print(sum(x[-2:]))
+
+x = ['b', 'a', 'c', 'e', 'd']
+print(sorted(x))
