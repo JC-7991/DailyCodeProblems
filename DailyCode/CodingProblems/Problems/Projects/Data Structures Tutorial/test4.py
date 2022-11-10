@@ -13,4 +13,6 @@ y = [6, 7, 8, 9, 10]
 x.extend(y)
 x.insert(1, 1.5)
 x.pop()
+x.remove(1)
+x.reverse()
 print(x)
