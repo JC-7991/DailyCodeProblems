@@ -4,3 +4,6 @@ print(x)
 
 x.append(7)
 print(x)
+
+del(x[3])
+print(x)
