@@ -25,3 +25,4 @@ print(sorted(x, key = lambda k: k[3]))
 
 x = 'hinglemccringleberry'
 print(x.count('e'))
+print(x.index('r'))
