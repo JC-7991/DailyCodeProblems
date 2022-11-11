@@ -1,4 +1,5 @@
-# tuples are faster than lists but are immutable, often used for fixed data
+# tuples are faster than lists but are immutable
+# they're often used for fixed data
 x = (1, 2, 3)
 print(x, type(x))
 
