@@ -29,7 +29,9 @@ print(x.index('r'))
 
 a = [m for m in range(8)]
 print(a)
+
 b = [i ** 2 for i in range(10) if i > 4]
 print(b)
+
 c = [i ** 3 for i in range(15) if i > 3]
 print(c)
