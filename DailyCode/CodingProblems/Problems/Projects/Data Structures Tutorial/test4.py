@@ -16,3 +16,10 @@ x.pop()
 x.remove(1)
 x.reverse()
 print(x)
+
+x = [5, 8, 3, 6, 1]
+x.sort()
+print(x)
+
+x.sort(reverse = True)
+print(x)
