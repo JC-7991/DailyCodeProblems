@@ -1,17 +1,17 @@
 class Order():
 
     def __init__(self):
-        self.orderIds = []
+        self.ids = []
     
-    def record(self, order_id):
-        self.orderIds.append(order_id)
+    def record(self, id):
+        self.ids.append(id)
     
     def get_last(self, i):
-        return self.orderIds[len(self.orderIds) - 1 - i]
+        return self.ids[len(self.ids) - 1 - i]
 
 orders = Order()
 for i in range(1, 101):
     orders.record(i)
-    
+
 print(orders.get_last(10))
 print(orders.get_last(50))
