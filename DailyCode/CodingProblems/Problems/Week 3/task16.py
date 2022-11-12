@@ -14,4 +14,5 @@ for i in range(1, 101):
     orders.record(i)
 
 print(orders.get_last(10))
+print(orders.get_last(25))
 print(orders.get_last(50))
