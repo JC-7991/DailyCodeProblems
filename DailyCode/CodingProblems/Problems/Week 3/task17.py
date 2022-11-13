@@ -1,6 +1,6 @@
 class Solution(object):
 
-    def lengthLongestPath(self, input):
+    def longestPath(self, input):
 
         maxlen = 0
         pathlen = {0: 0}
@@ -12,7 +12,7 @@ class Solution(object):
 
             if '.' in name:
                 maxlen = max(maxlen, pathlen[depth] + len(name))
-                
+
             else:
                 pathlen[depth + 1] = pathlen[depth] + len(name) + 1
 
