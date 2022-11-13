@@ -6,3 +6,7 @@ print(x)
 
 y = set()
 print(y)
+
+list1 = [1, 2, 4, 4]
+z = set(list1)
+print(z)
