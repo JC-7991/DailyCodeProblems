@@ -5,6 +5,7 @@ def print_max(arr, X, Y):
     for i in range(X - Y + 1):
 
         max = arr[i]
+        
         for j in range(1, Y):
             if arr[i + j] > max:
                 max = arr[i + j]
