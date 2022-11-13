@@ -2,8 +2,8 @@ class Solution(object):
 
     def longestPath(self, input):
 
-        maxlen = 0
-        pathlen = {0: 0}
+        max = 0
+        path = {0: 0}
 
         for line in input.split('\n'):
 
@@ -11,9 +11,9 @@ class Solution(object):
             depth = len(line) - len(name)
 
             if '.' in name:
-                maxlen = max(maxlen, pathlen[depth] + len(name))
+                max = max(max, path[depth] + len(name))
 
             else:
-                pathlen[depth + 1] = pathlen[depth] + len(name) + 1
+                path[depth + 1] = path[depth] + len(name) + 1
 
-        return maxlen
+        return max
