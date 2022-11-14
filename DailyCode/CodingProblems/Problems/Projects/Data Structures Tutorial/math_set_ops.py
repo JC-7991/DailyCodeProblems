@@ -3,3 +3,4 @@ s2 = {3, 4, 5}
 
 print(s1 & s2)
 print(s1 > s2)
+print(s1 | s2)
