@@ -1,4 +1,4 @@
-def minCost(costs, x):
+def min_cost(costs, x):
 
     if (x == 0):
         return 0
@@ -19,5 +19,5 @@ if __name__ == '__main__':
 
     costs = [[14, 2, 11], [11, 14, 5], [14, 3, 10]]
     x = len(costs)
-    minCost(costs, x)
+    min_cost(costs, x)
      
