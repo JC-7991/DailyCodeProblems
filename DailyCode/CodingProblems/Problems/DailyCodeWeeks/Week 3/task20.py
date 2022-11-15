@@ -4,7 +4,7 @@ class Node:
         self.data = data
         self.next = None
  
-def getIntersectionNode(head1, head2):
+def intersect(head1, head2):
 
     while head2:
 
@@ -39,13 +39,13 @@ if __name__ == '__main__':
 
     head2.next.next.next = newNode
     newNode = Node(30)
-    
+
     head1.next.next = newNode
  
-    intersectionPoint = getIntersectionNode(head1, head2)
+    intersectionPoint = intersect(head1, head2)
  
     if not intersectionPoint:
-        print("No Intersection Point.")
+        print("No Intersection Point found.")
 
     else:
         print("Intersection Point:", intersectionPoint.data)
