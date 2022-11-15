@@ -8,6 +8,7 @@ print('beef' in y)
 print('clams' in y.values())
 print(25.3 in y.values())
 
+# these values will not be printed in any sorted order
 for key in y:
     print(key, y[key])
 
