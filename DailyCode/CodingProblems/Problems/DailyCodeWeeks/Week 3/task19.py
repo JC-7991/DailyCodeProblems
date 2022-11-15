@@ -1,6 +1,6 @@
 def min_cost(costs, x):
 
-    if (x == 0):
+    if(x == 0):
         return 0
 
     dp = [[0 for i in range(3)] for j in range(3)]
