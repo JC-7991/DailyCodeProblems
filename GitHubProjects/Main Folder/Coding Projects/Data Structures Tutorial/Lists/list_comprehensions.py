@@ -11,3 +11,7 @@ print('squares: ' + str(squares))
 # get odd values
 odds = [x for x in range(10) if x % 2 == 1]
 print('odds: ' + str(odds))
+
+# get even values
+evens = [x for x in range(10) if x % 2 == 0]
+print('evens: ' + str(evens))
