@@ -1,10 +1,10 @@
 MAX = 100001
 
-def minHalls(lectures, n):
+def minHalls(lectures, x):
  
     prefix_sum = [0] * MAX
 
-    for i in range(n) :
+    for i in range(x) :
         prefix_sum[lectures[i][0]] += 1
         prefix_sum[lectures[i][1] + 1] -= 1
          
@@ -19,5 +19,5 @@ def minHalls(lectures, n):
 if __name__ == "__main__" :
  
     lectures = [[0, 5], [1, 2], [1, 10]]      
-    n = len(lectures)
-    print(minHalls(lectures, n))
+    x = len(lectures)
+    print(minHalls(lectures, x))
