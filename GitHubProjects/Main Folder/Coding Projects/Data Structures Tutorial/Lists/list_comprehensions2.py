@@ -5,3 +5,6 @@ print('nums: ' + ''.join(nums))
 names = ['Sonic', 'Tails', 'Knuckles', 'Shadow']
 idx = [k for k, v in enumerate(names) if v == 'Sonic']
 print('index = ' + str(idx[0]))
+
+idx = [k for k, v in enumerate(names) if v == 'Shadow']
+print('index = ' + str(idx[0]))
