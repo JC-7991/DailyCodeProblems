@@ -11,3 +11,6 @@ print('index = ' + str(idx[0]))
 
 idx = [k for k, v in enumerate(names) if v == 'Tails']
 print('index = ' + str(idx[0]))
+
+letters = [x for x in 'ABCDEFG']
+random.shuffle(letters)

@@ -1,5 +1,3 @@
-import random
-
 # get values within a range
 under_10 = [x for x in range(10)]
 print('under 10s: ' + str(under_10))
