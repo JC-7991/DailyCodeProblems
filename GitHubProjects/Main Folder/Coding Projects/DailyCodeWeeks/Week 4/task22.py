@@ -16,14 +16,14 @@ def wordBreak(word):
 if __name__ == "__main__" :
 
     dictionary = set()   
-    temp_dictionary = [ "mobile", "samsung", "sam", "sung", "man", "mango", "icecream", "and", "go", "i","like", "ice", "cream" ]
+    temp_dictionary = [ "sonic", "heroes", "is", "the", "best", "game", "ever", "made"]
 
     for temp in temp_dictionary:
         dictionary.add(temp)
 
-    print("Yes" if wordBreak("ilikesamsung") else "No")
-    print("Yes" if wordBreak("iiiiiiii") else "No")
+    print("Yes" if wordBreak("sonic") else "No")
+    print("Yes" if wordBreak("sanic") else "No")
     print("Yes" if wordBreak("") else "No")
-    print("Yes" if wordBreak("ilikelikeimangoiii") else "No")
-    print("Yes" if wordBreak("samsungandmango") else "No")
-    print("Yes" if wordBreak("samsungandmangok") else "No")
+    print("Yes" if wordBreak("sooooonic") else "No")
+    print("Yes" if wordBreak("sonicheroesis") else "No")
+    print("Yes" if wordBreak("sonicheroesismyjam") else "No")
