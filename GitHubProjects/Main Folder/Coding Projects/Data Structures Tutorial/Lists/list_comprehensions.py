@@ -16,6 +16,6 @@ print('odds: ' + str(odds))
 evens = [x for x in range(10) if x % 2 == 0]
 print('evens: ' + str(evens))
 
-# get even values
+# get multiples of five
 fives = [x for x in range(50) if x % 5 == 0]
 print('fives: ' + str(fives))
