@@ -16,3 +16,5 @@ print('index = ' + str(idx[0]))
 
 letters = [x for x in 'ABCDEFG']
 random.shuffle(letters)
+letrs = [a for a in letters if a != 'C']
+print(letters, letrs)
