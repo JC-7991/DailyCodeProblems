@@ -8,3 +8,6 @@ print('index = ' + str(idx[0]))
 
 idx = [k for k, v in enumerate(names) if v == 'Shadow']
 print('index = ' + str(idx[0]))
+
+idx = [k for k, v in enumerate(names) if v == 'Tails']
+print('index = ' + str(idx[0]))
