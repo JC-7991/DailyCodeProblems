@@ -19,3 +19,7 @@ print('evens: ' + str(evens))
 # get multiples of five
 fives = [x for x in range(50) if x % 5 == 0]
 print('fives: ' + str(fives))
+
+# get multiples of three
+threes = [x for x in range(100) if x % 3 == 0]
+print('threes: ' + str(threes))
