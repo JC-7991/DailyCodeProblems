@@ -5,4 +5,5 @@
 # stack using list
 my_stack = list()
 my_stack.append(4)
+my_stack.append(10)
 print(my_stack)
