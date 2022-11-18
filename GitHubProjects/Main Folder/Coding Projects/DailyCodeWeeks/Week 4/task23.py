@@ -11,27 +11,23 @@ def isSafe(mat, visited, x, y):
  
 def findShortestPath(mat, visited, i, j, x, y, min_dist, dist):
 
-    if (i == x and j == y):
+    if(i == x and j == y):
         min_dist = min(dist, min_dist)
         return min_dist
  
     visited[i][j] = True
 
-    if (isSafe(mat, visited, i + 1, j)):
-        min_dist = findShortestPath(
-            mat, visited, i + 1, j, x, y, min_dist, dist + 1)
+    if(isSafe(mat, visited, i + 1, j)):
+        min_dist = findShortestPath(mat, visited, i + 1, j, x, y, min_dist, dist + 1)
 
-    if (isSafe(mat, visited, i, j + 1)):
-        min_dist = findShortestPath(
-            mat, visited, i, j + 1, x, y, min_dist, dist + 1)
+    if(isSafe(mat, visited, i, j + 1)):
+        min_dist = findShortestPath(mat, visited, i, j + 1, x, y, min_dist, dist + 1)
 
-    if (isSafe(mat, visited, i - 1, j)):
-        min_dist = findShortestPath(
-            mat, visited, i - 1, j, x, y, min_dist, dist + 1)
+    if(isSafe(mat, visited, i - 1, j)):
+        min_dist = findShortestPath(mat, visited, i - 1, j, x, y, min_dist, dist + 1)
  
-    if (isSafe(mat, visited, i, j - 1)):
-        min_dist = findShortestPath(
-            mat, visited, i, j - 1, x, y, min_dist, dist + 1)
+    if(isSafe(mat, visited, i, j - 1)):
+        min_dist = findShortestPath(mat, visited, i, j - 1, x, y, min_dist, dist + 1)
  
     visited[i][j] = False
     return min_dist
