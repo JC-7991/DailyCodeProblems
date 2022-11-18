@@ -55,24 +55,26 @@ def findShortestPathLength(mat, src, dest):
         return dist
 
     return -1
- 
-mat = [[1, 0, 1, 1, 1, 1, 0, 1, 1, 1],
-       [1, 0, 1, 0, 1, 1, 1, 0, 1, 1],
-       [1, 1, 1, 0, 1, 1, 0, 1, 0, 1],
-       [0, 0, 0, 0, 1, 0, 0, 0, 0, 1],
-       [1, 1, 1, 0, 1, 1, 1, 0, 1, 0],
-       [1, 0, 1, 1, 1, 1, 0, 1, 0, 0],
-       [1, 0, 0, 0, 0, 0, 0, 0, 0, 1],
-       [1, 0, 1, 1, 1, 1, 0, 1, 1, 1],
-       [1, 1, 0, 0, 0, 0, 1, 0, 0, 1]
-       ]
- 
-src = Pair(0, 0)
-dest = Pair(3, 4)
-dist = findShortestPathLength(mat, src, dest)
 
-if(dist != -1):
-    print("Shortest Path is", dist)
- 
-else:
-    print("Shortest Path doesn't exist.")
+if __name__ == "__main__":
+
+    mat = [[1, 0, 1, 1, 1, 1, 0, 1, 1, 1],
+        [1, 0, 1, 0, 1, 1, 1, 0, 1, 1],
+        [1, 1, 1, 0, 1, 1, 0, 1, 0, 1],
+        [0, 0, 0, 0, 1, 0, 0, 0, 0, 1],
+        [1, 1, 1, 0, 1, 1, 1, 0, 1, 0],
+        [1, 0, 1, 1, 1, 1, 0, 1, 0, 0],
+        [1, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+        [1, 0, 1, 1, 1, 1, 0, 1, 1, 1],
+        [1, 1, 0, 0, 0, 0, 1, 0, 0, 1]
+    ]
+    
+    src = Pair(0, 0)
+    dest = Pair(3, 4)
+    dist = findShortestPathLength(mat, src, dest)
+
+    if(dist != -1):
+        print("Shortest Path is", dist)
+    
+    else:
+        print("Shortest Path doesn't exist.")
