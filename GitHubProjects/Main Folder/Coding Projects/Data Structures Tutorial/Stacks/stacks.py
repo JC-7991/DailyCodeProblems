@@ -6,6 +6,7 @@
 my_stack = list()
 my_stack.append(4)
 my_stack.append(10)
+my_stack.append(15)
 my_stack.append(19)
 my_stack.append(3)
 print(my_stack)
