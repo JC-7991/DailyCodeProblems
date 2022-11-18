@@ -13,7 +13,7 @@ def wordBreak(word):
 
     return False
 
-if __name__ == "__main__" :
+if __name__ == "__main__":
 
     dictionary = set()   
     temp_dictionary = [ "sonic", "heroes", "is", "the", "best", "game", "ever", "made"]
