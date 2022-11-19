@@ -24,3 +24,7 @@ class Stack():
     
     def __str__(self):
         return str(self.stack)
+
+if __name__ == "__main__":
+    
+    my_stack = Stack()
