@@ -32,7 +32,7 @@ def findShortestPath(mat, visited, i, j, x, y, min_dist, dist):
     visited[i][j] = False
     return min_dist
 
-def findShortestPathLength(mat, src, dest):
+def findShortestPathLen(mat, src, dest):
 
     if(len(mat) == 0 or mat[src.first][src.second] == 0 or mat[dest.first][dest.second] == 0):
         return -1
@@ -67,7 +67,7 @@ if __name__ == "__main__":
     
     src = Pair(0, 0)
     dest = Pair(3, 4)
-    dist = findShortestPathLength(mat, src, dest)
+    dist = findShortestPathLen(mat, src, dest)
 
     if(dist != -1):
         print("Shortest Path is", dist)
