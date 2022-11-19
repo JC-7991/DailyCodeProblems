@@ -23,4 +23,4 @@ class Stack():
             return None
     
     def __str__(self):
-        pass
+        return str(self.stack)
