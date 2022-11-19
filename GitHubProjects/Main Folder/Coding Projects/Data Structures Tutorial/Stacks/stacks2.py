@@ -28,3 +28,5 @@ class Stack():
 if __name__ == "__main__":
     
     my_stack = Stack()
+    my_stack.push(3)
+    print(my_stack)
