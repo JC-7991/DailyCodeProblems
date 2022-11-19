@@ -29,4 +29,9 @@ if __name__ == "__main__":
     
     my_stack = Stack()
     my_stack.push(3)
+    my_stack.push(5)
+    my_stack.push(7)
+    my_stack.push(9)
+    my_stack.push(11)
+    my_stack.push(13)
     print(my_stack)
