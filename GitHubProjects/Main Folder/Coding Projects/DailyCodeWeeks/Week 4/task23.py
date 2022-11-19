@@ -41,14 +41,14 @@ def findShortestPathLength(mat, src, dest):
     col = len(mat[0])
 
     visited = []
+
     for i in range(row):
         visited.append([None for _ in range(col)])
  
     dist = sys.maxsize
     dist = findShortestPath(mat, visited, src.first, src.second, dest.first, dest.second, dist, 0)
  
-    if(dist != sys.maxsize):
-        return dist
+    if(dist != sys.maxsize): return dist
 
     return -1
 
