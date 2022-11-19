@@ -31,8 +31,7 @@ def coding_problem_24():
             parent = self.parent
 
             while parent:
-                parent.descendants_locked = any(False if node is None else (node.locked or node.descendants_locked)
-                for node in (parent.left, parent.right))
+                parent.descendants_locked = any(False if node is None else (node.locked or node.descendants_locked) for node in (parent.left, parent.right))
                 parent = parent.parent
 
             return True
