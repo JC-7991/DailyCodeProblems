@@ -12,6 +12,7 @@ class Stack():
 
         if len(self.stack) > 0:
             return self.stack.pop()
+            
         else:
             return None
 
