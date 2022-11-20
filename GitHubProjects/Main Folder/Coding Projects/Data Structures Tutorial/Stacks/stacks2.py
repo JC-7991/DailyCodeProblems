@@ -33,6 +33,7 @@ if __name__ == "__main__":
     my_stack.push(5)
     my_stack.push(7)
     my_stack.push(9)
+
     my_stack.push(11)
     my_stack.push(13)
     my_stack.push(15)
@@ -44,3 +45,5 @@ if __name__ == "__main__":
 
     my_stack.push(100)
     print(my_stack)
+    print(my_stack.peek())
+    print(my_stack.pop())
