@@ -41,3 +41,6 @@ if __name__ == "__main__":
     print(my_stack.pop())
     print(my_stack.peek())
     print(my_stack.pop())
+
+    my_stack.push(100)
+    print(my_stack)
