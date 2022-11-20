@@ -1,4 +1,4 @@
-# implementation of a stack using a class and methods
+# implementation of a stack using a class and defined methods
 
 class Stack():
 
@@ -37,6 +37,7 @@ if __name__ == "__main__":
     my_stack.push(11)
     my_stack.push(13)
     my_stack.push(15)
+    my_stack.push(17)
 
     print(my_stack)
     print(my_stack.pop())
