@@ -1,6 +1,6 @@
 def strrmatch(strr, pattern, n, m):
  
-    if (m == 0):
+    if(m == 0):
         return (n == 0)
  
     lookup = [[False for i in range(m + 1)] for j in range(n + 1)]
@@ -15,8 +15,10 @@ def strrmatch(strr, pattern, n, m):
 
             if (pattern[j - 1] == '*'):
                 lookup[i][j] = lookup[i][j - 1] or lookup[i - 1][j]
+
             elif(pattern[j - 1] == '?' or strr[i - 1] == pattern[j - 1]):
                 lookup[i][j] = lookup[i - 1][j - 1]
+
             else:
                 lookup[i][j] = False
  
